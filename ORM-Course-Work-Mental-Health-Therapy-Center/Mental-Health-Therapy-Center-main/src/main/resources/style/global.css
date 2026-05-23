@@ -1,0 +1,262 @@
+/* ═══════════════════════════════════════════════════════════════
+   Global Stylesheet — Mental Health Therapy Center
+   Premium Calming Teal & Slate Theme  |  v2.0
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Root / Typography ─────────────────────────────────────── */
+.root {
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    -fx-base: #f8fafc;
+    -fx-background: #f8fafc;
+}
+
+/* ── Text Fields & Password Fields ────────────────────────── */
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1.5px;
+    -fx-padding: 9px 14px;
+    -fx-text-fill: #1e293b;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #0d9488;
+    -fx-border-width: 2px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(13,148,136,0.18), 8, 0.0, 0, 0);
+}
+
+.text-field:hover, .password-field:hover {
+    -fx-border-color: #94a3b8;
+}
+
+/* ── Choice Box & Combo Box ────────────────────────────────── */
+.choice-box, .combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1.5px;
+    -fx-padding: 4px 10px;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.choice-box:focused, .combo-box:focused {
+    -fx-border-color: #0d9488;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(13,148,136,0.18), 8, 0.0, 0, 0);
+}
+
+.choice-box:hover, .combo-box:hover {
+    -fx-border-color: #94a3b8;
+}
+
+.choice-box > .label, .combo-box > .label {
+    -fx-text-fill: #1e293b;
+}
+
+.choice-box .context-menu, .combo-box .context-menu {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.10), 14, 0.0, 0, 5);
+    -fx-padding: 4px 0px;
+}
+
+.choice-box .menu-item:hover, .combo-box .menu-item:hover {
+    -fx-background-color: #f0fdfa;
+}
+
+.choice-box .menu-item .label, .combo-box .menu-item .label {
+    -fx-text-fill: #1e293b;
+}
+
+.choice-box .menu-item .label:hover, .combo-box .menu-item .label:hover {
+    -fx-text-fill: #0f766e;
+}
+
+/* ── Date Picker ───────────────────────────────────────────── */
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.date-picker > .text-field {
+    -fx-background-radius: 10px 0px 0px 10px;
+    -fx-border-radius: 10px 0px 0px 10px;
+    -fx-border-width: 1.5px 0px 1.5px 1.5px;
+    -fx-border-color: #cbd5e1;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 0px 10px 10px 0px;
+    -fx-border-radius: 0px 10px 10px 0px;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 1.5px 1.5px 1.5px 0px;
+    -fx-cursor: hand;
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: #f0fdfa;
+    -fx-border-color: #0d9488;
+}
+
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: #64748b;
+}
+
+.date-picker-popup {
+    -fx-background-color: white;
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 18, 0.0, 0, 6);
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: linear-gradient(to right, #0f766e, #0d9488);
+    -fx-background-radius: 14px 14px 0px 0px;
+    -fx-padding: 8px;
+}
+
+.date-picker-popup > .month-year-pane > .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.date-picker-popup > .calendar-grid {
+    -fx-background-color: white;
+    -fx-background-radius: 0px 0px 14px 14px;
+    -fx-padding: 6px;
+}
+
+.date-picker-popup > .calendar-grid > .day-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1e293b;
+    -fx-background-radius: 50%;
+    -fx-font-size: 12px;
+}
+
+.date-picker-popup > .calendar-grid > .day-cell:hover {
+    -fx-background-color: #f0fdfa;
+    -fx-text-fill: #0f766e;
+}
+
+.date-picker-popup > .calendar-grid > .selected {
+    -fx-background-color: #0d9488;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-font-weight: bold;
+}
+
+.date-picker-popup > .calendar-grid > .today {
+    -fx-border-color: #0d9488;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 50%;
+}
+
+/* ── Global Button Defaults ────────────────────────────────── */
+.button {
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+.button:hover {
+    -fx-opacity: 0.88;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 6, 0.0, 0, 2);
+}
+
+.button:pressed {
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+    -fx-opacity: 1.0;
+}
+
+/* ── Sidebar Navigation Buttons ────────────────────────────── */
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-border-width: 0px 0px 0px 4px;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #e2e8f0;
+    -fx-border-color: #0d9488;
+    -fx-effect: dropshadow(three-pass-box, rgba(13,148,136,0.12), 6, 0.0, 0, 0);
+}
+
+.sidebar-btn:focused, .sidebar-btn:active {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+    -fx-border-color: #0d9488;
+}
+
+/* ── Stat Card Accents (applied via styleClass on VBox cards) ─ */
+.card-teal {
+    -fx-background-color: linear-gradient(to bottom right, #f0fdfa, #ccfbf1);
+    -fx-background-radius: 14px;
+    -fx-border-color: #99f6e4;
+    -fx-border-width: 1px;
+    -fx-border-radius: 14px;
+    -fx-effect: dropshadow(three-pass-box, rgba(13,148,136,0.08), 12, 0, 0, 4);
+}
+
+.card-slate {
+    -fx-background-color: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+    -fx-background-radius: 14px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 14px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 12, 0, 0, 4);
+}
+
+/* ── Scrollbar Global ──────────────────────────────────────── */
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #cbd5e1;
+    -fx-background-radius: 20px;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #94a3b8;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #f1f5f9;
+    -fx-background-radius: 20px;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 3px;
+}
+
+/* ── Labels ────────────────────────────────────────────────── */
+.label {
+    -fx-font-size: 13px;
+}
+
+/* ── TableView (base) ──────────────────────────────────────── */
+.table-view {
+    -fx-selection-bar: #ccfbf1;
+    -fx-selection-bar-non-focused: #f0fdfa;
+}
