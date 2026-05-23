@@ -13,8 +13,10 @@ public class Initializer extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Parent load = FXMLLoader.load((getClass().getResource("/view/LogIn.fxml")));
-        stage.setScene(new Scene(load));
-        stage.setTitle("Center");
+        Scene scene = new Scene(load);
+        scene.getStylesheets().add(getClass().getResource("/style/global.css").toExternalForm());
+        stage.setScene(scene);
+        stage.setTitle("Mental Health Therapy Center");
         stage.show();
     }
 

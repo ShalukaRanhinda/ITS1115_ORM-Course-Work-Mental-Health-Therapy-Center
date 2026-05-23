@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ITS1115_ORM-Course-Work-Mental-Health-Therapy-Center.iml" filepath="$PROJECT_DIR$/.idea/ITS1115_ORM-Course-Work-Mental-Health-Therapy-Center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ORM-Course-Work-Mental-Health-Therapy-Center/Mental-Health-Therapy-Center-main/therapy-center.iml" filepath="$PROJECT_DIR$/ORM-Course-Work-Mental-Health-Therapy-Center/Mental-Health-Therapy-Center-main/therapy-center.iml" />
     </modules>
   </component>
 </project>

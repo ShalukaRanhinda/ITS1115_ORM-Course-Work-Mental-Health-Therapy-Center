@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.PaymentController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f8fafc;" stylesheets="@../style/global.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.PaymentController">
     <children>
         <VBox layoutX="1.0" prefHeight="600.0" prefWidth="800.0" spacing="20.0">
             <padding>
@@ -21,7 +21,7 @@
             </padding>
             <children>
                 <!-- Header -->
-                <Label text="Payment &amp; Invoice Management" textFill="#2c3e50">
+                <Label text="Payment &amp; Invoice Management" textFill="#0f766e">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
@@ -29,7 +29,7 @@
                         <Insets bottom="5.0" />
                     </padding>
                     <graphic>
-                        <HBox prefHeight="8.0" prefWidth="80.0" style="-fx-background-color: #009432;" />
+                        <HBox prefHeight="4.0" prefWidth="80.0" style="-fx-background-color: #0d9488; -fx-background-radius: 2px;" />
                     </graphic>
                 </Label>
 
@@ -40,12 +40,12 @@
                             <children>
                                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                                     <children>
-                                        <Label prefWidth="90.0" text="Payment ID:" textFill="#2c3e50">
+                                        <Label prefWidth="90.0" text="Payment ID:" textFill="#475569">
                                             <font>
                                                 <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
-                                        <Label fx:id="lblPaymentId" text="Automatic" textFill="#2c3e50">
+                                        <Label fx:id="lblPaymentId" text="Automatic" textFill="#1e293b">
                                             <font>
                                                 <Font size="12.0" />
                                             </font>
@@ -54,7 +54,7 @@
                                 </HBox>
                                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                                     <children>
-                                        <Label prefWidth="90.0" text="Date:" textFill="#2c3e50">
+                                        <Label prefWidth="90.0" text="Date:" textFill="#475569">
                                             <font>
                                                 <Font name="System Bold" size="14.0" />
                                             </font>
@@ -64,7 +64,7 @@
                                 </HBox>
                                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                                     <children>
-                                        <Label prefWidth="90.0" text="Amount:" textFill="#2c3e50">
+                                        <Label prefWidth="90.0" text="Amount:" textFill="#475569">
                                             <font>
                                                 <Font name="System Bold" size="14.0" />
                                             </font>
@@ -78,7 +78,7 @@
                             <children>
                                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                                     <children>
-                                        <Label prefWidth="90.0" text="Patient:" textFill="#2c3e50">
+                                        <Label prefWidth="90.0" text="Patient:" textFill="#475569">
                                             <font>
                                                 <Font name="System Bold" size="14.0" />
                                             </font>
@@ -88,7 +88,7 @@
                                 </HBox>
                                 <HBox alignment="CENTER_LEFT" spacing="10.0">
                                     <children>
-                                        <Label prefWidth="90.0" text="Session:" textFill="#2c3e50">
+                                        <Label prefWidth="90.0" text="Session:" textFill="#475569">
                                             <font>
                                                 <Font name="System Bold" size="14.0" />
                                             </font>
@@ -105,18 +105,18 @@
                 <!-- Buttons -->
                 <HBox alignment="CENTER" prefHeight="35.0" prefWidth="537.0" spacing="10.0">
                     <children>
-                        <Label fx:id="errorMessage" prefHeight="17.0" prefWidth="112.0" />
-                        <Button fx:id="btnProcess" mnemonicParsing="false" onAction="#processPayment" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #2ecc71; -fx-text-fill: white;" text="Process Payment">
+                        <Label fx:id="errorMessage" prefHeight="17.0" prefWidth="112.0" textFill="#e11d48" />
+                        <Button fx:id="btnProcess" mnemonicParsing="false" onAction="#processPayment" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #0d9488; -fx-text-fill: white; -fx-background-radius: 8px; -fx-font-weight: bold;" text="Process Payment">
                             <font>
                                 <Font name="System Bold" size="12.0" />
                             </font>
                         </Button>
-                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updatePayment" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f39c12; -fx-text-fill: white;" text="Update">
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updatePayment" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #d97706; -fx-text-fill: white; -fx-background-radius: 8px; -fx-font-weight: bold;" text="Update">
                             <font>
                                 <Font name="System Bold" size="12.0" />
                             </font>
                         </Button>
-                        <Button fx:id="btnReset" mnemonicParsing="false" onAction="#resetForm" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #7f8c8d; -fx-text-fill: white;" text="Reset">
+                        <Button fx:id="btnReset" mnemonicParsing="false" onAction="#resetForm" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #64748b; -fx-text-fill: white; -fx-background-radius: 8px; -fx-font-weight: bold;" text="Reset">
                             <font>
                                 <Font name="System Bold" size="12.0" />
                             </font>
@@ -128,7 +128,7 @@
                 </HBox>
 
                 <!-- Payment Records Header -->
-                <Label text="Payment Records:" textFill="#2c3e50">
+                <Label text="Payment Records:" textFill="#1e293b">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
